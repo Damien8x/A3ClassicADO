@@ -48,7 +48,8 @@ public class RedirectClass
     public DataTable GetGrantTypes()
     {
         DataTable table = new DataTable();
-        String sql =   "Select GrantTypeKey From GrantRequest Group By GrantTypeKey";
+        //  String sql =   "Select GrantTypeKey From GrantRequest Group By GrantTypeKey";
+        String sql = "Select granttypekey, Granttypename from granttype group by granttypename, granttypekey";
 
 
 

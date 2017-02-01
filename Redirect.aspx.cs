@@ -17,7 +17,7 @@ public partial class Redirect : System.Web.UI.Page
             {
                 DataTable table = tb.GetGrantTypes();
                 DropDownList1.DataSource = table;
-                DropDownList1.DataTextField = "GrantTypeKey";
+                DropDownList1.DataTextField = "GrantTypeName";
                 DropDownList1.DataValueField = "GrantTypeKey";
                 DropDownList1.DataBind();
                 ListItem item = new ListItem("Choose Grant Type");
